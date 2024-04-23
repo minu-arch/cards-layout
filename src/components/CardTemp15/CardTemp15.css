@@ -1,0 +1,85 @@
+.temp15 {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: #fff;
+  border-radius: 20px;
+}
+/* Header */
+.card-header-temp15 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: calc(10px + 0.1vw);
+}
+.card-header-temp15 h1 {
+  font-size: calc(15px + 3.2vmin);
+}
+.card-header-temp15 h2 {
+  color: black;
+  font-size: calc(9px + 0.5vmin);
+}
+
+/* Body */
+
+.card-body-temp15 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card-body-temp15 h2 {
+  color: #e50757;
+  font-size: calc(12px + 2vmin);
+  font-weight: 600;
+}
+.card-body-temp15 p {
+  margin: 0;
+  padding: 0;
+  font-size: calc(9px + 0.5vmin);
+  font-weight: 400;
+}
+.space-body-temp15 {
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  max-width: 360px;
+  width: 100%;
+  height: 1.5px;
+  border: 1px solid #f3f3f3;
+}
+.advantage-body-temp15 {
+  display: flex;
+  gap: calc(10px + 0.1vw);
+  padding-bottom: 16px;
+}
+.advantage-body-temp15 h4 {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: calc(9px + 0.5vmin);
+  font-weight: 400;
+}
+/* Footer */
+
+.card-footer-temp15 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.card-footer-temp15 button {
+  background-color: #e50757;
+  width: 181px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: calc(9px + 0.5vmin);
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}

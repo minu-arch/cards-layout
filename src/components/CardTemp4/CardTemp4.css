@@ -1,0 +1,41 @@
+.temp4 {
+  border: none;
+}
+.content-text-temp4 {
+  color: black;
+  margin: 0 !important;
+  font-size: calc(8px + 0.8vmin);
+  text-align: start;
+  font-weight: 700;
+}
+h2 {
+  margin: 0 !important;
+  font-size: calc(8px + 0.5vmin);
+  text-align: start;
+  font-weight: 400;
+  color: #9b9999;
+}
+.temp4 p {
+  margin: 10px;
+  font-size: calc(9px + 1.3vmin);
+  color: black;
+  text-align: start;
+  font-weight: 500;
+}
+.card-wrapper-temp4 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.card-media-temp4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: start;
+  gap: 15px;
+  padding: 15px;
+}
+.date-temp2 {
+  text-align: start;
+}

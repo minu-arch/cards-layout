@@ -1,0 +1,47 @@
+/* html,
+body,
+root {
+  height: 100%;
+} */
+.unique-h1 {
+  padding: 20px;
+  color: #646cffaa;
+  font-size: calc(15px + 2vmin);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui;
+}
+
+.app-wrapper {
+  border-radius: 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+  padding: 15px;
+  border: 1px solid #646cffaa;
+  border-radius: 20px;
+  margin: 2px;
+  background-color: #bacad9;
+}
+
+.my-masonry-grid_column {
+  padding: 3px;
+  background-clip: padding-box;
+}
+
+.card {
+  border: 1px solid red;
+  margin-bottom: 5px;
+  max-width: 360px;
+}

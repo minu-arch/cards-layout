@@ -1,0 +1,136 @@
+.temp7 {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+.media-body-temp7 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+.avatar-temp7 img {
+  width: calc(10vw);
+  height: calc(10vw);
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: cover;
+}
+
+/* Main */
+
+.content-temp7 h1 {
+  color: black;
+  margin: 0 !important;
+  font-size: calc(8px + 0.8vmin);
+  text-align: start;
+  font-weight: 700;
+}
+
+.card-body-temp7 h3:nth-child(1) {
+  padding-top: 35px !important;
+  color: black;
+  padding: 10px;
+  font-size: calc(14px + 0.8vmin);
+  font-weight: 700;
+  margin: 0;
+}
+.card-body-temp7 h3:nth-child(2) {
+  font-size: calc(9px + 0.8vmin);
+  color: #9b9999;
+  text-align: start;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 10px;
+}
+.card-body-temp7 p:nth-last-of-type(1) {
+  margin: 10px;
+  font-size: calc(7px + 1vmin);
+  color: black;
+  text-align: start;
+  font-weight: 500;
+}
+
+.card-main-temp7 {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px 10px 35px 10px;
+  gap: calc(5px + 1vw);
+}
+.card-main-temp7 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb3349;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.badge-react-temp7 {
+  width: calc(16vw);
+}
+.badge-javascript-temp7 {
+  width: calc(25vw);
+}
+.badge-angular-temp7 {
+  width: calc(16vw);
+}
+.card-main-temp7 p {
+  color: white;
+  font-size: calc(8px + 0.2vmin);
+  padding: 0;
+  margin: 10px;
+}
+/* Footer */
+.card-footer-temp7 p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-footer-temp7 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: calc(15px + 0.5vw);
+  padding: 20px 0 20px 0;
+}
+
+.heart-temp7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(2px + 0.5vw);
+}
+.share-temp7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(2px + 0.5vw);
+}
+.comment-temp7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(2px + 0.5vw);
+}
+
+.heart-temp7 img {
+  max-width: 15px;
+  max-height: 15px;
+}
+.share-temp7 img {
+  max-width: 15px;
+  max-height: 15px;
+}
+.comment-temp7 img {
+  max-width: 15px;
+  max-height: 15px;
+}
+.footer-text-temp7 {
+  font-size: calc(8px + 0.6vmin);
+}

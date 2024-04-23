@@ -1,0 +1,135 @@
+.temp5 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  border: none !important;
+}
+.card-wrapped-temp5 {
+  display: flex;
+  flex-direction: column;
+}
+.card-header-temp5 {
+  max-width: 360px;
+  width: 100%;
+}
+.card-media-temp5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.content-temp5 h1 {
+  color: black;
+  margin: 0 !important;
+  font-size: calc(8px + 0.8vmin);
+  text-align: start;
+  font-weight: 700;
+}
+.content-temp5 h2 {
+  margin: 0;
+  font-size: calc(8px + 0.5vmin);
+  text-align: start;
+  font-weight: 400;
+  color: #9b9999;
+}
+.body-temp5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.avatar-temp5 img {
+  width: calc(12vw);
+  height: calc(12vw);
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: cover;
+}
+.media-option-temp5 {
+  max-width: 69px;
+  max-height: 31px;
+}
+.media-option-temp5 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 69px;
+  max-height: 31px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 2px solid black;
+  font-size: calc(7px + 0.8vmin);
+  padding: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.media-option-temp5 p {
+  margin: 0;
+  padding: 0;
+  font-size: calc(7px + 0.4vmin);
+  text-transform: uppercase;
+  margin: 15px;
+  font-weight: 700;
+  color: black;
+}
+.media-option-temp5 button:hover,
+.media-option-temp5 button:hover p {
+  background-color: black;
+  color: #fff;
+}
+.image-group-temp5 {
+  display: flex;
+  flex-direction: column;
+}
+.group-1 {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+}
+.group-1 img {
+  width: 32.8%;
+  height: auto;
+  object-fit: contain;
+}
+
+.group-2 {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+}
+.group-2 img {
+  width: 49.7%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-body-temp5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+.card-footer-temp5 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+}
+.p-unique-temp5 {
+  font-size: calc(9px + 1vmin);
+  color: #9b9999;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  margin: 0;
+}
+
+.h2-unique-temp5 {
+  padding: 10px;
+  color: black;
+  font-size: calc(16px + 1vmin);
+  font-weight: 700;
+}

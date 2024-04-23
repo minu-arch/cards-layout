@@ -1,0 +1,88 @@
+.temp11 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+/* Header */
+
+.media-header-temp11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 0 10px 15px;
+  gap: calc(25px + 0.1vw);
+}
+.name-header-temp11 {
+  color: black;
+  margin: 0 !important;
+  font-size: calc(12px + 0.8vmin);
+  font-weight: 700;
+}
+.ocupation-header-temp11 {
+  margin: 0 !important;
+  font-size: calc(10px + 0.8vmin);
+  font-weight: 400;
+  color: #78858f;
+  letter-spacing: 0.5px;
+}
+/* Body */
+.body-card-temp11 {
+  position: relative;
+}
+
+.button-temp11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 1px solid white;
+  padding: 0;
+  cursor: pointer;
+}
+.button-temp11 p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: calc(8px + 0.4vmin);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.body-card-temp11 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Footer */
+.footer-card-temp11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-footer-temp11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+.price-footer-temp11 p:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  text-decoration: line-through;
+  font-size: calc(10px + 0.4vmin);
+  color: #d6483a;
+}
+.price-footer-temp11 p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  font-size: calc(15px + 0.4vmin);
+  font-weight: 700;
+}
+.about-footer-temp11 {
+  font-size: calc(10px + 0.4vmin);
+  color: #78858f;
+  font-weight: 400;
+}

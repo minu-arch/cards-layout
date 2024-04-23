@@ -1,0 +1,95 @@
+.temp18 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+}
+.havana-temp18 {
+  max-width: 360px;
+  max-height: 370px;
+}
+/* Header */
+
+.header-card-temp18 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+  gap: calc(18px + 1vw);
+}
+.left-header-temp18 {
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+.bookmark-header-temp18 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-card-temp18 h1 {
+  font-size: calc(15px + 1.2vmin);
+}
+
+/* Caption */
+
+.caption-card-temp18 {
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f5f5;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.frame1-caption-temp18 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  max-width: 18px;
+  max-height: 19px;
+  background-color: #fff;
+}
+.frame1-caption-temp18 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.2);
+}
+.caption-card-temp18 h4 {
+  color: black;
+}
+.testez-fram18 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Footer */
+
+.footer-card-temp18 h2 {
+  font-size: calc(10px + 0.9vmin);
+  color: black;
+  padding: 1rem 0 0 1rem;
+  font-weight: 700;
+}
+.footer-card-temp18 p {
+  font-size: calc(7px + 0.7vmin);
+  color: black;
+  padding: 1rem;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
