@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+		"types": ["vite/client", "vitest/globals"],
+		"moduleResolution": "Bundler",
+		"jsx": "react-jsx",
+
+		"baseUrl": ".",
+		"outDir": ".local/build",
+		"noUnusedLocals": false,
+		"paths": {
+			"~/*": ["./source/*"],
+			"styled-system/*": ["./.local/panda/*"]
+		}
+	},
+	"include": ["*.ts*", "source", "scripts"]
+}

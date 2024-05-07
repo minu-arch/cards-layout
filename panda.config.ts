@@ -1,0 +1,73 @@
+import { defineConfig } from "@pandacss/dev"
+import * as park from "@park-ui/panda-preset"
+import { createPreset } from "@park-ui/panda-preset"
+import { Lightbulb } from "lucide-react"
+
+export default defineConfig({
+	jsxFramework: "react",
+	outdir: ".local/panda",
+	clean: true,
+
+	preflight: true,
+	presets: [
+		"@pandacss/preset-base",
+
+		park.createPreset({
+			grayColor: "sand",
+			accentColor: "blue",
+			additionalColors: [
+				"amber",
+				"ruby",
+				"blue",
+				"green",
+				"purple",
+				"sky",
+				"red",
+				"neutral",
+				"slate",
+				"sand",
+				"mauve",
+				"Alizarin Crimson",
+				"indigo",
+				"Cyan",
+				"orange",
+				"violet",
+				"yellow",
+				"pink",
+				"teal",
+				"lime",
+				"emerald",
+				"Jade",
+				"green",
+				"grass",
+				"mint",
+				"olive",
+				"tomato",
+			],
+			borderRadius: "sm",
+		}),
+	],
+
+	staticCss: {
+		recipes: "*",
+	},
+
+	theme: {
+		breakpoints: {
+			"@xs": "420px",
+			"@sm": "640px",
+			"@md": "768px",
+			"@lg": "1024px",
+			"@xl": "1280px",
+			"@xxl": "1440px",
+			"@wide": "2560px",
+		},
+	},
+
+	studio: {
+		outdir: ".local/panda",
+	},
+
+	include: ["./source/**/*.{ts,tsx}"],
+	exclude: [],
+})

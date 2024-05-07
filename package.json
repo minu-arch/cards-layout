@@ -1,0 +1,33 @@
+{
+	"name": "@navaru/reactlabs",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "pnpm panda:codegen",
+		"dev": "pnpm panda:codegen && vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"panda:codegen": "panda codegen --clean",
+		"ui:update": "pnpx @park-ui/cli add --all"
+	},
+	"devDependencies": {
+		"@pandacss/dev": "latest",
+		"@park-ui/cli": "latest",
+		"@park-ui/panda-preset": "latest",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@vitejs/plugin-react-swc": "^3",
+		"tsx": "^4",
+		"vite": "^5",
+		"vite-tsconfig-paths": "latest",
+		"vitest": "^1"
+	},
+	"dependencies": {
+		"@ark-ui/react": "^2",
+		"@remix-run/router": "^1",
+		"lucide-react": "latest",
+		"react": "^18",
+		"react-dom": "^18",
+		"styled-components": "^6.1.9"
+	}
+}
