@@ -14,6 +14,7 @@ export default () => (
 			<Link href="/dashboard">Dashboard</Link>
 			<Link href="/login">Login</Link>
 			<Link href="/tictactoe">TicTacToe</Link>
+			<Link href="/trinity">Trinity</Link>
 		</Stack>
 	</Container>
 )

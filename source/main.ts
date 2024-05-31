@@ -1,5 +1,6 @@
 import { createBrowserHistory, createRouter } from "@remix-run/router"
 import { createRoot } from "react-dom/client"
+import { createElement } from "react"
 import routes from "./routes"
 
 function getContainer() {
@@ -17,9 +18,11 @@ async function main() {
 	router.initialize()
 
 	root.render(
-		router.state.matches.map(({ route }) =>
-			route.children?.length ? route.children : route.handle?.()
-		)
+		router.state.matches.map(({ route }) => {
+			if (route.children?.length) return route.children
+			if (route.handle) return createElement(route.handle, { key: route.path })
+			return createElement("div", { key: route.path }, "Unknown route") as any
+		})
 	)
 }
 

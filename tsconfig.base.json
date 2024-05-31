@@ -6,7 +6,7 @@
 
 		// code checking rules
 		"strict": true,
-		"allowJs": false,
+		"allowJs": true,
 		"skipLibCheck": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,

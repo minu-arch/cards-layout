@@ -130,7 +130,7 @@ const CardEleven = () => {
 						</HStack>
 					</HStack>
 					<Progress
-						value={value}
+						value={50}
 						min={0}
 						max={100}
 						style={{ color: "transparent" }}
