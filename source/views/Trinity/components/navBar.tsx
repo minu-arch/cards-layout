@@ -1,13 +1,9 @@
 import { Box, Circle, HStack, Stack } from "styled-system/jsx"
-import { css } from "@emotion/react" // Import the css function from the correct module
-import * as Card from "~/ui/card"
-import { Bold } from "lucide-react"
 import { Text } from "~/ui/text"
 import { Button } from "~/ui/button"
 import { useState } from "react"
 import { useEffect } from "react"
 import HamburgerMenu from "react-hamburger-menu"
-import { keyframes } from "@emotion/react"
 import { customGreen } from "./customGreen"
 
 const navBar = () => {
