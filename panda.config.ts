@@ -42,6 +42,7 @@ export default defineConfig({
 				"mint",
 				"olive",
 				"tomato",
+				"white",
 			],
 			borderRadius: "sm",
 		}),

@@ -33,7 +33,7 @@ const navBar = () => {
 			style={{ backgroundColor: whiteColor }}
 			bg="neutral.12"
 			w="100%"
-			p={{ base: "5", "@md": "3", "@lg": "5" }}
+			p={{ base: "2", "@md": "3", "@lg": "5" }}
 			mt={{ base: "0", "@md": "3", "@lg": "5" }}
 			// justifyContent="space-between"
 		>
