@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, HStack, Stack, Circle } from "styled-system/jsx"
+import { Box, HStack, Stack, Circle, Grid } from "styled-system/jsx"
 import { Text } from "~/ui/text"
 import { customGreen } from "./customGreen"
 
@@ -244,10 +244,58 @@ export const BrockerAccount = () => (
 	</Stack>
 )
 
+export const Transaction = () => (
+	<HStack
+		width="100%"
+		maxW={{
+			base: "sm",
+			"@sm": "xl",
+			"@md": "3xl",
+			"@lg": "4xl",
+			"@xl": "5xl",
+			"@xxl": "6xl",
+		}}
+		alignItems="center"
+		justifyContent="space-between"
+		gap="5"
+		flexDirection={{
+			base: "column",
+			"@xxl": "row",
+		}}
+	>
+		<Box
+			h="350px"
+			w="100%"
+			borderRadius="lg"
+			pt="5"
+			pb="0"
+			pl="30"
+			pr="30"
+			style={{ backgroundColor: "#fff" }}
+			position="relative"
+		>
+			<BrockerAccount />
+		</Box>
+		<Box>
+			<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
+				One-click Transactions
+			</Text>
+			<Text as="p" color="grass.7">
+				Trinity's platform streamlines the investment process with one-click
+				transactions, allowing users to execute trades and transactions quickly and
+				efficiently. Whether buying stocks, adjusting asset allocations, or making
+				contributions to retirement accounts.
+			</Text>
+		</Box>
+	</HStack>
+)
+
 const Content = () => {
 	return (
 		<Box w="100%" bg="neutral.12" color="GrayText">
 			<Stack alignItems="center" justifyContent="space-between" gap="10" p="8">
+				<Transaction />
+
 				<HStack
 					width="100%"
 					maxW={{
@@ -275,34 +323,25 @@ const Content = () => {
 						pl="30"
 						pr="30"
 						style={{ backgroundColor: "#fff" }}
-						position="relative"
-					>
-						<BrockerAccount />
-					</Box>
-					<Box>
-						<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
-							One-click Transactions
-						</Text>
-						<Text as="p" color="grass.7">
-							Trinity's platform streamlines the investment process with one-click
-							transactions, allowing users to execute trades and transactions quickly
-							and efficiently. Whether buying stocks, adjusting asset allocations, or
-							making contributions to retirement accounts.
-						</Text>
-					</Box>
-				</HStack>
-				<HStack>
-					<Box
-						h="350px"
-						w="100%"
-						borderRadius="lg"
-						pt="5"
-						pb="0"
-						pl="30"
-						pr="30"
-						style={{ backgroundColor: "#fff" }}
 						// position="relative"
-					></Box>
+					>
+						<Box bg="neutral.11" p="2" borderRadius="2xl">
+							<Grid gridTemplateColumns="repeat(2, 1fr)" gap="2">
+								<Box bg="blue.5" borderRadius="md">
+									Div 1
+								</Box>
+								<Box bg="red.5" borderRadius="md">
+									Div 2
+								</Box>
+								<Box bg="green.5" borderRadius="md">
+									Div 3
+								</Box>
+								<Box bg="yellow.5" borderRadius="md">
+									Div 4
+								</Box>
+							</Grid>
+						</Box>
+					</Box>
 					<Box>
 						<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
 							Customizable Dashboard
@@ -315,6 +354,7 @@ const Content = () => {
 						</Text>
 					</Box>
 				</HStack>
+
 				<HStack>
 					<Box bg="white.a1" w="100%"></Box>
 					<Box>
