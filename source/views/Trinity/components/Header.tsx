@@ -8,7 +8,13 @@ import dashboardImage from "./image/XPrT2Jx3bssjbbpvl2Q4LXWYGU.webp"
 
 const Header = () => {
 	return (
-		<Box className="header" bg="sage.12" borderRadius="2xl" p="5">
+		<Box
+			className="header"
+			bg="sage.12"
+			borderRadius="2xl"
+			p={{ base: "5", "@md": "3", "@lg": "5" }}
+			w="100%"
+		>
 			<Stack>
 				<Stack alignItems="center" justifyContent="center" mt="10">
 					<Text

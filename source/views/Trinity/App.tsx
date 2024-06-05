@@ -17,7 +17,7 @@ const App = () => {
 					backgroundColor: whiteColor,
 				}}
 				width={{
-					base: "md",
+					base: "sm",
 					"@sm": "xl",
 					"@md": "3xl",
 					"@lg": "4xl",
@@ -26,13 +26,15 @@ const App = () => {
 				}}
 				display="flex"
 				justifyContent="center"
+				alignItems="center"
+				flexDirection="column"
 				position="relative"
 			>
 				<NavBar />
 				<Header />
 				<Main />
-				<Content />
 			</Stack>
+			<Content />
 		</>
 	)
 }
