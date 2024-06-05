@@ -304,22 +304,27 @@ const Content = () => {
 						// position="relative"
 					></Box>
 					<Box>
-						<Text as="h2" w="100%" style={{ color: customGreen }}>
-							Lorem ipsum dolor sit
+						<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
+							Customizable Dashboard
 						</Text>
-						<Text as="p">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In etiam
+						<Text as="p" color="grass.7">
+							Trinity's platform offers a customizable dashboard that allows users to
+							personalize their experience based on their preferences and priorities.
+							Users can rearrange widgets, add or remove modules, and tailor the
+							dashboard layout to suit their individual needs.
 						</Text>
 					</Box>
 				</HStack>
 				<HStack>
 					<Box bg="white.a1" w="100%"></Box>
 					<Box>
-						<Text as="h2" style={{ color: customGreen }}>
-							Lorem ipsum dolor sit
+						<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
+							Real-Time Alerts & Notifications
 						</Text>
-						<Text as="p">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In etiam
+						<Text as="p" color="grass.7">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a
+							facilisis nulla. Fusce tincidunt ornare purus eget hendrerit. Integer
+							viverra nisl viverra mi placerat, a vestibulum justo consectetur.
 						</Text>
 					</Box>
 				</HStack>
