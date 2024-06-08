@@ -14,7 +14,7 @@ export default defineConfig({
 
 		park.createPreset({
 			grayColor: "sand",
-			accentColor: "blue",
+			accentColor: "grass",
 			additionalColors: [
 				"amber",
 				"ruby",

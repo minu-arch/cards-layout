@@ -1,7 +1,6 @@
 import { Box, HStack, Stack } from "styled-system/jsx"
 import { Text } from "~/ui/text"
 import { customGreen } from "./customGreen"
-import React, { useRef, useEffect } from "react"
 
 const RightContent = () => {
 	return (
@@ -64,15 +63,27 @@ const RightContent = () => {
 							mt="5"
 							justifyContent="space-between"
 						>
-							<Box w="10%" bg="neutral.11" h="4" borderRadius="xs"></Box>
-							<Box w="10%" bg="neutral.11" h="6" borderRadius="xs"></Box>
+							<Box
+								w="10%"
+								bg="neutral.11"
+								h="4"
+								borderRadius="xs"
+								transition="all"
+							></Box>
+							<Box
+								w="10%"
+								bg="neutral.11"
+								h="6"
+								borderRadius="xs"
+								transition="height 0.5s"
+							></Box>
 							<Box w="10%" bg="neutral.11" h="8" borderRadius="xs"></Box>
 							<Box w="10%" bg="neutral.11" h="12" borderRadius="xs"></Box>
 							<Box w="10%" bg="neutral.11" h="16" borderRadius="xs"></Box>
 							<Box
 								w="10%"
-								style={{ background: customGreen }}
 								h="20"
+								style={{ background: customGreen }}
 								borderRadius="xs"
 							></Box>
 						</HStack>
