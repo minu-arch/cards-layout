@@ -1,6 +1,4 @@
-import React from "react"
-import { Box, Circle, HStack, Stack, Container } from "styled-system/jsx"
-import { css } from "@emotion/react"
+import { Box, HStack, Stack } from "styled-system/jsx"
 import { Text } from "~/ui/text"
 import { Button } from "~/ui/button"
 import { customGreen } from "./customGreen"

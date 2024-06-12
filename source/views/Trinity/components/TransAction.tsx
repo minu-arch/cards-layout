@@ -1,6 +1,5 @@
 import { Box, HStack, Stack, Circle } from "styled-system/jsx"
 import { Text } from "~/ui/text"
-import StocksMarket from "./image/stocks.jpg"
 
 export const BrockerAccount = () => (
 	<Stack
@@ -259,7 +258,7 @@ const TransAction = () => {
 				"@xl": "5xl",
 				"@xxl": "6xl",
 			}}
-			h="auto"
+			h="full"
 			alignItems="center"
 			justifyContent="space-between"
 			gap="5"
@@ -269,7 +268,7 @@ const TransAction = () => {
 			}}
 		>
 			<Box
-				h="350px"
+				h="360px"
 				w="100%"
 				borderRadius="lg"
 				pt="5"
@@ -281,22 +280,43 @@ const TransAction = () => {
 			>
 				<Box
 					className="box-image"
-					w="100%"
-					h="100%"
+					w="auto"
+					h="auto"
 					zIndex="1"
 					top="0"
-					bottom="0"
-					left="0"
-					right="0"
-					margin="auto"
-					position="absolute"
-					borderRadius="lg"
-					style={{
-						backgroundImage: `url(${StocksMarket})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
+					bottom={{
+						base: "10",
+						"@md": "0",
 					}}
-				/>
+					right="0"
+					position="absolute"
+				>
+					<svg
+						width="100%"
+						height="100%"
+						viewBox="0 0 360 360"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						id="svg1532859896_1077"
+					>
+						<path d="M360 -3.14722e-05L0 0L360 360L360 -3.14722e-05Z" fill="#719267" />
+						<path d="M360 288L360 360L288 288L360 288Z" fill="white" />
+						<path d="M288 288L288 216L216 216L288 288Z" fill="white" />
+						<path d="M216 216L216 144L144 144L216 216Z" fill="white" />
+						<path d="M144 144L144 72L72 72L144 144Z" fill="white" />
+						<path d="M72 72L72 -6.29444e-06L0 0L72 72Z" fill="white" />
+						<path d="M144 72L72 0L144 -6.29444e-06L144 72Z" fill="white" />
+						<path d="M216 144L144 72L216 72L216 144Z" fill="white" />
+						<path d="M288 216L216 144L288 144L288 216Z" fill="white" />
+						<path d="M360 216L288 144L360 144L360 216Z" fill="white" />
+						<path d="M216 72L144 0L216 -6.29444e-06L216 72Z" fill="white" />
+						<path d="M288 144L216 72L288 72L288 144Z" fill="white" />
+						<path d="M360 144L288 72L360 72L360 144Z" fill="white" />
+						<path d="M360 72L288 0L360 -6.29444e-06L360 72Z" fill="white" />
+						<path d="M288 72L216 0L288 -6.29444e-06L288 72Z" fill="white" />
+						<path d="M360 288L288 216L360 216L360 288Z" fill="white" />
+					</svg>
+				</Box>
 				<BrockerAccount />
 			</Box>
 			<Box>

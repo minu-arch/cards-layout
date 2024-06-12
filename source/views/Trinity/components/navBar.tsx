@@ -83,13 +83,12 @@ const navBar = () => {
 			</HStack>
 
 			<Stack
-				// paddingLeft="5"
 				className="nav-links"
 				h="100%"
 				w="100%"
 				alignItems="flex-start"
 				justifyContent="flex-start"
-				pl="5"
+				pl="10"
 				// mt="-20"
 				display={{ base: open ? "flex" : "none", "@md": "none" }}
 				style={{

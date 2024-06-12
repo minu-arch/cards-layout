@@ -10,7 +10,7 @@ import Notification from "./Notification"
 
 const Content = () => {
 	return (
-		<Box w="100%" bg="neutral.12" color="GrayText">
+		<Box w="100%" bg="neutral.12">
 			<Stack alignItems="center" justifyContent="space-between" gap="10" p="8">
 				<TransAction />
 
