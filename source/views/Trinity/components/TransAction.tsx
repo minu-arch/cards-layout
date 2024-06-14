@@ -15,7 +15,7 @@ export const BrockerAccount = () => (
 		position="absolute"
 		top={{
 			base: "20%",
-			"@xxl": "10%",
+			"@xxl": "18%",
 		}}
 		left={{
 			base: "-21%",
