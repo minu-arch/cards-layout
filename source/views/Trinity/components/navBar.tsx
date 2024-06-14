@@ -1,5 +1,6 @@
-import { Box, Circle, HStack, Stack } from "styled-system/jsx"
+import { Box, HStack, Stack } from "styled-system/jsx"
 import { Text } from "~/ui/text"
+import { Link } from "~/ui/link"
 import { Button } from "~/ui/button"
 import { useState } from "react"
 import { useEffect } from "react"
@@ -28,19 +29,13 @@ const navBar = () => {
 		<HStack
 			style={{ backgroundColor: whiteColor }}
 			bg="neutral.12"
-			w="100%"
+			w="full"
 			p={{ base: "2", "@md": "3", "@lg": "5" }}
 			pl={{ base: "5", "@md": "3", "@lg": "5" }}
 			pr={{ base: "5", "@md": "3", "@lg": "5" }}
 			mt={{ base: "0", "@md": "3", "@lg": "5" }}
-			// justifyContent="space-between"
 		>
-			<HStack
-				w="100%"
-				justifyContent="space-between"
-				alignItems="center"
-				// pl={{ base: "0", "@md": "0", "@lg": "10" }}
-			>
+			<HStack w="full" justifyContent="space-between" alignItems="center">
 				<Box>
 					<svg
 						width="27"
@@ -64,20 +59,28 @@ const navBar = () => {
 					display={{ base: "none", "@md": "flex" }}
 				>
 					<HStack gap="10">
-						<Text as="p" size="md" fontWeight="normal" style={{ color: customGreen }}>
-							Investment
+						<Text as="p" size="md" fontWeight="normal">
+							<Link href="#" textDecoration="none" style={{ color: customGreen }}>
+								Investment
+							</Link>
 						</Text>
-						<Text as="p" size="md" fontWeight="normal" style={{ color: customGreen }}>
-							Features
+						<Text as="p" size="md" fontWeight="normal">
+							<Link href="#" textDecoration="none" style={{ color: customGreen }}>
+								Features
+							</Link>
 						</Text>
-						<Text as="p" size="md" fontWeight="normal" style={{ color: customGreen }}>
-							FAQ
+						<Text as="p" size="md" fontWeight="normal">
+							<Link href="#" textDecoration="none" style={{ color: customGreen }}>
+								FAQ
+							</Link>
 						</Text>
 					</HStack>
 				</HStack>
 				<Box display={{ base: "none", "@md": "flex" }}>
-					<Text as="p" size="md" fontWeight="normal" style={{ color: customGreen }}>
-						Log In
+					<Text as="p" size="md" fontWeight="normal">
+						<Link href="#" textDecoration="none" style={{ color: customGreen }}>
+							Log In
+						</Link>
 					</Text>
 				</Box>
 			</HStack>
@@ -85,11 +88,10 @@ const navBar = () => {
 			<Stack
 				className="nav-links"
 				h="100%"
-				w="100%"
+				w="full"
 				alignItems="flex-start"
 				justifyContent="flex-start"
 				pl="10"
-				// mt="-20"
 				display={{ base: open ? "flex" : "none", "@md": "none" }}
 				style={{
 					backgroundColor: whiteColor,
@@ -109,7 +111,6 @@ const navBar = () => {
 					paddingLeft="2"
 					transition="all 0.7s ease"
 					w="xs"
-					color="grass.8"
 					_hover={{
 						bg: "mint.12",
 						borderRadius: "15",
@@ -117,13 +118,14 @@ const navBar = () => {
 						w: "xs",
 					}}
 				>
-					Investment
+					<Link href="#" textDecoration="none" color="grass.8">
+						Investment
+					</Link>
 				</Text>
 				<Text
 					as="p"
 					size="md"
 					fontWeight="normal"
-					color="grass.8"
 					paddingLeft="2"
 					transition="all 0.7s ease"
 					w="xs"
@@ -134,13 +136,14 @@ const navBar = () => {
 						w: "xs",
 					}}
 				>
-					Features
+					<Link href="#" textDecoration="none" color="grass.8">
+						Features
+					</Link>
 				</Text>
 				<Text
 					as="p"
 					size="md"
 					fontWeight="normal"
-					color="grass.8"
 					paddingLeft="2"
 					transition="all 0.7s ease"
 					w="xs"
@@ -151,13 +154,14 @@ const navBar = () => {
 						w: "xs",
 					}}
 				>
-					FAQ
+					<Link href="#" textDecoration="none" color="grass.8">
+						FAQ
+					</Link>
 				</Text>
 				<Text
 					as="p"
 					size="md"
 					fontWeight="normal"
-					color="grass.8"
 					paddingLeft="2"
 					transition="all 0.7s ease"
 					w="xs"
@@ -168,7 +172,9 @@ const navBar = () => {
 						paddingLeft: "2",
 					}}
 				>
-					Log In
+					<Link href="#" textDecoration="none" color="grass.8">
+						Log In
+					</Link>
 				</Text>
 				<Button
 					bg="neutral.12"
@@ -179,7 +185,7 @@ const navBar = () => {
 					size="md"
 					borderBottomWidth="4"
 					p="0"
-					w="100%"
+					w="full"
 					maxW="10rem"
 				>
 					Purchase Template

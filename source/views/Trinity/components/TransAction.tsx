@@ -49,9 +49,9 @@ export const BrockerAccount = () => (
 				$201.28 (+12.3%)
 			</Text>
 		</HStack>
-		<Stack w="100%">
-			<Stack w="100%">
-				<HStack justifyContent="space-between" w="100%">
+		<Stack w="full">
+			<Stack w="full">
+				<HStack justifyContent="space-between" w="full">
 					<Box>
 						<Circle borderColor="neutral.11" borderWidth="0.5" p="1">
 							<svg
@@ -112,7 +112,7 @@ export const BrockerAccount = () => (
 							</svg>
 						</Circle>
 					</Box>
-					<HStack justifyContent="space-between" w="100%">
+					<HStack justifyContent="space-between" w="full">
 						<Box>
 							<Text as="p" color="neutral.9" fontSize="xs" fontWeight="medium">
 								USD Account (...4231)
@@ -134,8 +134,8 @@ export const BrockerAccount = () => (
 				<Box bg="neutral.11" h="0.1"></Box>
 			</Stack>
 
-			<Stack w="100%">
-				<HStack justifyContent="space-between" w="100%">
+			<Stack w="full">
+				<HStack justifyContent="space-between" w="full">
 					<Box>
 						<Circle borderColor="neutral.11" borderWidth="0.5" p="1">
 							<svg
@@ -149,7 +149,7 @@ export const BrockerAccount = () => (
 							</svg>
 						</Circle>
 					</Box>
-					<HStack justifyContent="space-between" w="100%">
+					<HStack justifyContent="space-between" w="full">
 						<Box>
 							<Text as="p" color="neutral.9" fontSize="xs" fontWeight="medium">
 								Cash Account
@@ -170,8 +170,8 @@ export const BrockerAccount = () => (
 				</HStack>
 				<Box bg="neutral.11" h="0.1"></Box>
 			</Stack>
-			<Stack w="100%">
-				<HStack justifyContent="space-between" w="100%">
+			<Stack w="full">
+				<HStack justifyContent="space-between" w="full">
 					<Box>
 						<Circle borderColor="neutral.11" borderWidth="0.5" p="1">
 							<svg
@@ -185,7 +185,7 @@ export const BrockerAccount = () => (
 							</svg>
 						</Circle>
 					</Box>
-					<HStack justifyContent="space-between" w="100%">
+					<HStack justifyContent="space-between" w="full">
 						<Box>
 							<Text as="p" color="neutral.9" fontSize="xs" fontWeight="medium">
 								Cash Account
@@ -207,8 +207,8 @@ export const BrockerAccount = () => (
 				<Box bg="neutral.11" h="0.1"></Box>
 			</Stack>
 
-			<Stack w="100%">
-				<HStack justifyContent="space-between" w="100%">
+			<Stack w="full">
+				<HStack justifyContent="space-between" w="full">
 					<Box>
 						<Circle borderColor="neutral.11" borderWidth="0.5" p="1">
 							<svg
@@ -222,7 +222,7 @@ export const BrockerAccount = () => (
 							</svg>
 						</Circle>
 					</Box>
-					<HStack justifyContent="space-between" w="100%">
+					<HStack justifyContent="space-between" w="full">
 						<Box>
 							<Text as="p" color="neutral.9" fontSize="xs" fontWeight="medium">
 								Cash Account
@@ -249,7 +249,7 @@ export const BrockerAccount = () => (
 const TransAction = () => {
 	return (
 		<HStack
-			width="100%"
+			w="full"
 			maxW={{
 				base: "md",
 				"@sm": "xl",
@@ -269,7 +269,7 @@ const TransAction = () => {
 		>
 			<Box
 				h="360px"
-				w="100%"
+				w="full"
 				borderRadius="lg"
 				pt="5"
 				pb="0"
@@ -319,11 +319,11 @@ const TransAction = () => {
 				</Box>
 				<BrockerAccount />
 			</Box>
-			<Box>
+			<Box w="full">
 				<Text as="h2" color="grass.7" fontWeight="medium" fontSize="lg">
 					One-click Transactions
 				</Text>
-				<Text as="p" color="grass.7">
+				<Text as="p" color="grass.7" wordBreak="break-word" whiteSpace="pre-wrap">
 					Trinity's platform streamlines the investment process with one-click
 					transactions, allowing users to execute trades and transactions quickly and
 					efficiently. Whether buying stocks, adjusting asset allocations, or making

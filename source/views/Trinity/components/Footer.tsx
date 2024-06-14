@@ -125,9 +125,9 @@ const Footer = () => {
 					</Stack>
 				</HStack>
 				<Box
-					w="full"
 					h="0.1"
 					bg="neutral.11"
+					w="full"
 					maxW={{
 						base: "sm",
 						"@sm": "xl",
@@ -148,6 +148,7 @@ const Footer = () => {
 						"@xl": "5xl",
 						"@xxl": "6xl",
 					}}
+					alignItems="center"
 					justifyContent="space-between"
 				>
 					<Text
@@ -159,7 +160,7 @@ const Footer = () => {
 						fontWeight="medium"
 					>
 						© 2024 Trinity Financial. All Rights Reserved
-					</Text>
+					</Text>{" "}
 					<Text
 						as="h2"
 						fontSize={{ base: "sm", "@md": "md" }}
@@ -167,6 +168,10 @@ const Footer = () => {
 						wordBreak="break-word"
 						whiteSpace="pre-wrap"
 						fontWeight="medium"
+						display="flex"
+						alignItems="center"
+						justifyContent="center"
+						flexDir={{ base: "column", "@md": "row" }}
 					>
 						Need a custom website?{" "}
 						<Link
@@ -175,6 +180,7 @@ const Footer = () => {
 							wordBreak="break-word"
 							whiteSpace="pre-wrap"
 							fontWeight="medium"
+							textDecoration="none"
 							href="https://www.google.com"
 							target="_blank"
 							rel="noopener noreferrer"
