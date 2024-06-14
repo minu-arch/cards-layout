@@ -7,12 +7,12 @@ export const BrockerAccount = () => (
 		borderTopRadius="2xl"
 		p="3"
 		alignItems="flex-start"
+		position="absolute"
 		w={{
 			base: "80%",
 			"@sm": "70%",
 			"@md": "50%",
 		}}
-		position="absolute"
 		top={{
 			base: "20%",
 			"@xxl": "18%",
@@ -277,6 +277,7 @@ const TransAction = () => {
 				pr="30"
 				style={{ backgroundColor: "#fff" }}
 				position="relative"
+				overflow="hidden"
 			>
 				<Box
 					className="box-image"

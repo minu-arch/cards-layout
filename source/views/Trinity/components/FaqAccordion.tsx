@@ -46,7 +46,7 @@ const FaqAccordion = () => {
 		<>
 			<Box
 				mt="8"
-				w="100%"
+				w="full"
 				h="auto"
 				bg="neutral.12"
 				borderRadius="2xl"
@@ -56,7 +56,7 @@ const FaqAccordion = () => {
 			>
 				<Stack
 					flexDirection={{ base: "column", "@lg": "row" }}
-					w="100%"
+					w="full"
 					justifyContent="space-between"
 					gap="5"
 				>

@@ -7,7 +7,7 @@ const LeftContent = () => {
 		<>
 			<Box
 				bg="sage.12"
-				w="100%"
+				w="full"
 				h="xs"
 				p="3"
 				borderRadius="2xl"
