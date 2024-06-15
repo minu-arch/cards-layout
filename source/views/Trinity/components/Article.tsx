@@ -30,7 +30,11 @@ export const ArticleTitle = () => (
 	</>
 )
 
-export const ArticleElastic = () => (
+export const ArticleElastic = ({
+	data,
+}: {
+	data: { name: string; position: string }
+}) => (
 	<Box bg="sage.12" borderRadius="2xl" p="2" w="100%">
 		<Stack p="3" h="100%" w="100%" gap="20">
 			<Box>
@@ -113,10 +117,10 @@ export const ArticleElastic = () => (
 					}}
 					fontWeight="medium"
 				>
-					John Doe
+					{data.name}
 				</Text>
 				<Text as="p" color="grass.7">
-					Chief Operating Officer at Elastic AI
+					{data.position}
 				</Text>
 			</Box>
 		</Stack>
@@ -254,6 +258,10 @@ export const ArticleVital = () => (
 )
 
 const Article = () => {
+	const data = {
+		name: "John Doe",
+		position: "Chief Operating Officer at Elastic AI",
+	}
 	return (
 		<>
 			<Box mt="8" w="100%">
@@ -267,7 +275,7 @@ const Article = () => {
 						"@xxl": "row",
 					}}
 				>
-					<ArticleElastic />
+					<ArticleElastic data={data} />
 
 					<Stack
 						w={{
