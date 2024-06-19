@@ -1,13 +1,85 @@
 import { Box, HStack, Stack } from "styled-system/jsx"
 import { Text } from "~/ui/text"
 import { customGreen } from "./customGreen"
+import { css } from "styled-system/css"
 
 const RightContent = () => {
+	const $BoxChart1 = css({
+		width: "10%",
+		background: "neutral.11",
+		height: "4",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "0s",
+	})
+
+	const $BoxChart2 = css({
+		width: "10%",
+		background: "neutral.11",
+		height: "6",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "2s",
+	})
+
+	const $BoxChart3 = css({
+		width: "10%",
+		background: "neutral.11",
+		height: "8",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "4s",
+	})
+
+	const $BoxChart4 = css({
+		width: "10%",
+		background: "neutral.11",
+		height: "12",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "6s",
+	})
+
+	const $BoxChart5 = css({
+		width: "10%",
+		background: "neutral.11",
+		height: "16",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "8s",
+	})
+
+	const $BoxChart6 = css({
+		width: "10%",
+		height: "20",
+		borderRadius: "xs",
+		opacity: "0",
+		transformOrigin: "bottom",
+		animation: "growAndReset 10s infinite",
+		animationDelay: "10s",
+	})
+
+	const data = {
+		type: "IRA Account",
+		description: "Retirement Investing",
+		summary:
+			"Save and invest for your retirement years, ensuring a comfortable lifestyle when you stop working.",
+	}
 	return (
 		<>
 			<Box
 				bg="sage.12"
-				w="100%"
+				w="full"
 				h="xs"
 				p="3"
 				borderRadius="2xl"
@@ -31,11 +103,11 @@ const RightContent = () => {
 							color="green.4"
 							fontWeight="medium"
 						>
-							IRA Account
+							{data.type}
 						</Text>
 					</Box>
 					<Text as="h2" fontSize="md" color="green.4" fontWeight="medium">
-						Retirement Investing
+						{data.description}
 					</Text>
 					<Text
 						as="p"
@@ -45,11 +117,10 @@ const RightContent = () => {
 						wordBreak="break-word"
 						whiteSpace="pre-wrap"
 					>
-						Save and invest for your retirement years, ensuring a comfortable lifestyle
-						when you stop working.
+						{data.summary}
 					</Text>
 					<Stack
-						w="100%"
+						w="full"
 						maxW="xs"
 						position="absolute"
 						transform="translate(-50%, -50%)"
@@ -57,37 +128,20 @@ const RightContent = () => {
 						left="50%"
 					>
 						<HStack
-							w="100%"
+							w="full"
 							h="100%"
 							alignItems="flex-end"
 							mt="5"
 							justifyContent="space-between"
 						>
-							<Box
-								w="10%"
-								bg="neutral.11"
-								h="4"
-								borderRadius="xs"
-								transition="all"
-							></Box>
-							<Box
-								w="10%"
-								bg="neutral.11"
-								h="6"
-								borderRadius="xs"
-								transition="height 0.5s"
-							></Box>
-							<Box w="10%" bg="neutral.11" h="8" borderRadius="xs"></Box>
-							<Box w="10%" bg="neutral.11" h="12" borderRadius="xs"></Box>
-							<Box w="10%" bg="neutral.11" h="16" borderRadius="xs"></Box>
-							<Box
-								w="10%"
-								h="20"
-								style={{ background: customGreen }}
-								borderRadius="xs"
-							></Box>
+							<div className={$BoxChart1}></div>
+							<div className={$BoxChart2}></div>
+							<div className={$BoxChart3}></div>
+							<div className={$BoxChart4}></div>
+							<div className={$BoxChart5}></div>
+							<div className={$BoxChart6} style={{ background: customGreen }}></div>
 						</HStack>
-						<Box w="100%" h="0.2" bg="neutral.11" mt="-1" />
+						<Box w="full" h="0.2" bg="neutral.11" mt="-1" />
 					</Stack>
 				</Stack>
 			</Box>

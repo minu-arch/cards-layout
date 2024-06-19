@@ -9,14 +9,26 @@ import FaqAccordion from "./components/FaqAccordion"
 import InvestmentCallToAction from "./components/InvestmentCallToAction"
 import Footer from "./components/Footer"
 import { Stack, Box } from "styled-system/jsx"
+import { styled } from "styled-system/jsx"
 
 const App = () => {
 	const whiteColor = "#fff"
+
+	const Container = styled("div", {
+		base: {
+			position: "relative",
+			width: "100vw",
+			height: "100vh",
+			display: "flex",
+			alignItems: "center",
+			flexDirection: "column",
+			backgroundColor: whiteColor,
+		},
+	})
 	return (
-		<>
+		<Container>
 			<Stack
 				className="container"
-				// bg="neutral.12"
 				h="100%"
 				p="5"
 				style={{
@@ -42,7 +54,6 @@ const App = () => {
 			<Content />
 			<Stack
 				className="box-content"
-				// bg="neutral.12"
 				h="100%"
 				p="5"
 				style={{
@@ -72,7 +83,7 @@ const App = () => {
 				<InvestmentCallToAction />
 			</Stack>
 			<Footer />
-		</>
+		</Container>
 	)
 }
 

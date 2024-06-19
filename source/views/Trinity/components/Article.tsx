@@ -264,7 +264,7 @@ const Article = () => {
 	}
 	return (
 		<>
-			<Box mt="8" w="100%">
+			<Box mt="8" w="full">
 				<ArticleTitle />
 
 				<HStack

@@ -51,7 +51,6 @@ export default defineConfig({
 	staticCss: {
 		recipes: "*",
 	},
-
 	theme: {
 		breakpoints: {
 			"@xs": "420px",
@@ -61,6 +60,16 @@ export default defineConfig({
 			"@xl": "1280px",
 			"@xxl": "1440px",
 			"@wide": "2560px",
+		},
+		extend: {
+			keyframes: {
+				growAndReset: {
+					"0%": { transform: "scaleY(0)", opacity: "0" },
+					"20%": { transform: "scaleY(1)", opacity: "1" },
+					"80%": { transform: "scaleY(1)", opacity: "1" },
+					"100%": { transform: "scaleY(0)", opacity: "0" },
+				},
+			},
 		},
 	},
 

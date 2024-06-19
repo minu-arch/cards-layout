@@ -11,7 +11,7 @@ const Header = () => {
 			bg="sage.12"
 			borderRadius="2xl"
 			p={{ base: "5", "@md": "3", "@lg": "5" }}
-			w="100%"
+			w="full"
 		>
 			<Stack>
 				<Stack alignItems="center" justifyContent="center" mt="10">
@@ -48,7 +48,6 @@ const Header = () => {
 						borderBottomWidth="4"
 						pl="3"
 						pr="3"
-						// w="100%"
 						maxW="sm"
 						mt="5"
 					>
@@ -58,7 +57,7 @@ const Header = () => {
 						Try for free.
 					</Text>
 					<Box
-						w="100%"
+						w="full"
 						h={{ base: "1/3", "@md": "xs", "@lg": "1/2" }}
 						bg="grass.6"
 						borderRadius="2xl"
@@ -89,7 +88,7 @@ const Header = () => {
 					<HStack
 						gap={{ base: "5", "@md": "4" }}
 						justifyContent={{ base: "space-around", "@md": "space-between" }}
-						w="100%"
+						w="full"
 						mt="5"
 						alignItems="center"
 						className="parteners"
