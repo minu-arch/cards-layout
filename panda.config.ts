@@ -77,6 +77,6 @@ export default defineConfig({
 		outdir: ".local/panda",
 	},
 
-	include: ["./source/**/*.{ts,tsx}"],
+	include: ["./source/**/*.{ts,tsx,jsx}"],
 	exclude: [],
 })

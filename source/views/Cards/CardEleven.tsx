@@ -41,7 +41,6 @@ const CardEleven = () => {
 			</Stack>
 
 			<HStack
-				display="flex"
 				flexDirection={{ base: "column", "@lg": "row" }}
 				gap="10"
 				justifyContent="center"

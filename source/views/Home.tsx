@@ -11,10 +11,9 @@ export default () => (
 			<Link href="/payment">Payment</Link>
 			<Link href="/product">Product</Link>
 			<Link href="/cards">Cards</Link>
-			<Link href="/dashboard">Dashboard</Link>
-			<Link href="/login">Login</Link>
 			<Link href="/tictactoe">TicTacToe</Link>
 			<Link href="/trinity">Trinity</Link>
+			<Link href="/trello">TrelloBoard</Link>
 		</Stack>
 	</Container>
 )

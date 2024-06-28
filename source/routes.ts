@@ -6,6 +6,7 @@ import Product from "~/examples/Product"
 import Cards from "~/views/Cards"
 import TicTacToe from "./views/TicTacToe/JsxTicTacToe"
 import App from "./views/Trinity/App"
+import TrelloBoard from "./views/TrelloBoard/App"
 
 export default <AgnosticRouteObject[]>[
 	{ path: "/", handle: Home, index: true },
@@ -15,4 +16,5 @@ export default <AgnosticRouteObject[]>[
 	{ path: "/cards", handle: Cards },
 	{ path: "/tictactoe", handle: TicTacToe },
 	{ path: "/trinity", handle: App },
+	{ path: "/trello", handle: TrelloBoard },
 ]
