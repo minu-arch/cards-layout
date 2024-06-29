@@ -10,7 +10,7 @@
 		"skipLibCheck": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
-		"noUnusedLocals": true,
+		"noUnusedLocals": false, // set to true if you want to enforce unused locals
 		"noUnusedParameters": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,

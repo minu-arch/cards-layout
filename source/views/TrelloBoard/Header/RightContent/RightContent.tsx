@@ -2,7 +2,12 @@ import { Box, HStack } from "styled-system/jsx"
 import { IconButton } from "~/ui/icon-button"
 import { Avatar } from "~/ui/avatar"
 
-const RightContent = ({ show, toggleIcon }) => {
+interface RightContentProps {
+	show: boolean
+	toggleIcon: () => void
+}
+
+const RightContent: React.FC<RightContentProps> = ({ show, toggleIcon }) => {
 	return (
 		<Box p="1" borderRadius="8">
 			<HStack gap="4">

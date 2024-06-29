@@ -10,7 +10,6 @@ const LeftContent = () => {
 						id="name"
 						size="xs"
 						bg="blue.10"
-						placeholderTextColor="neutral.10"
 						style={{
 							border: "none",
 						}}
