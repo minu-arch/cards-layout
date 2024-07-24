@@ -1,9 +1,9 @@
 import { Box, HStack, Stack } from "styled-system/jsx"
-import { Text } from "~/ui/text"
+import { Text, Heading } from "~/ui"
 
 export const ArticleTitle = () => (
 	<>
-		<Text
+		<Heading
 			mt="5"
 			as="h2"
 			fontSize={{ base: "xl", "@md": "2xl", "@lg": "3xl", "@xxl": "4xl" }}
@@ -15,8 +15,8 @@ export const ArticleTitle = () => (
 			textAlign="center"
 		>
 			Hear it from the community
-		</Text>
-		<Text
+		</Heading>
+		<Heading
 			as="h2"
 			fontSize={{ base: "xs", "@md": "sm", "@lg": "md", "@xxl": "xl" }}
 			color="green.4"
@@ -26,7 +26,7 @@ export const ArticleTitle = () => (
 			textAlign="center"
 		>
 			Investing plans that meet all your needs.
-		</Text>
+		</Heading>
 	</>
 )
 
@@ -87,7 +87,7 @@ export const ArticleElastic = ({
 			</Box>
 
 			<Box w="100%">
-				<Text
+				<Heading
 					as="h2"
 					color="grass.5"
 					fontSize={{
@@ -99,7 +99,7 @@ export const ArticleElastic = ({
 					fontWeight="medium"
 				>
 					"Its the greatest investment we've made in our employees"
-				</Text>
+				</Heading>
 				<Text as="p" color="grass.7">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a facilisis
 					nulla. Fusce tincidunt ornare purus eget hendrerit. Integer viverra nisl
@@ -176,7 +176,7 @@ export const ArticleAcme = () => (
 					/>
 				</svg>
 			</Box>
-			<Text
+			<Heading
 				as="h2"
 				color="grass.5"
 				fontSize={{
@@ -187,7 +187,7 @@ export const ArticleAcme = () => (
 				}}
 			>
 				Acme employees saved an average of 20% more with Trinity
-			</Text>
+			</Heading>
 		</Stack>
 	</Box>
 )
@@ -241,7 +241,7 @@ export const ArticleVital = () => (
 					/>
 				</svg>
 			</Box>
-			<Text
+			<Heading
 				as="h2"
 				color="grass.5"
 				fontSize={{
@@ -252,7 +252,7 @@ export const ArticleVital = () => (
 				}}
 			>
 				Acme employees saved an average of 20% more with Trinity
-			</Text>
+			</Heading>
 		</Stack>
 	</Box>
 )

@@ -16,7 +16,7 @@ const CardThree = () => {
 			padding: "10px 20px",
 			cursor: "pointer",
 			bg: "blue.9",
-			height: "40",
+			height: "10",
 			"&:hover": {
 				backgroundColor: "#2020ff",
 			},
@@ -64,8 +64,10 @@ const CardThree = () => {
 						className="form-control inputBorder"
 					/>
 				</Stack>
-				<div style={{ height: "15px" }} />
-				<StyledButton variant="primary">Subscribe</StyledButton>
+
+				<StyledButton variant="primary" mt="5">
+					Subscribe
+				</StyledButton>
 			</Stack>
 		</Card.Root>
 	)

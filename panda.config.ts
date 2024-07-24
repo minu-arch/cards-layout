@@ -29,6 +29,7 @@ export default defineConfig({
 				"sage",
 				"mauve",
 				"indigo",
+				"iris",
 				"cyan",
 				"orange",
 				"violet",
