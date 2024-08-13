@@ -11,13 +11,14 @@ import CardEight from "./CardSeven"
 import CardNine from "./CardNine"
 import CardTen from "./CardTen"
 import CardEleven from "./CardEleven"
-
+import FlightBooker from "./FlightBooker"
 export default () => (
 	<Container w="md" py="6">
 		<Heading as="h1" size="lg" textAlign="center">
 			Cards
 		</Heading>
 		<Stack mt="5" mx="auto" alignItems="center">
+			<FlightBooker />
 			<CardOne />
 			<CardTwo />
 			<CardThree />

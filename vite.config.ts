@@ -2,7 +2,7 @@ import { defineConfig, type UserConfig } from "vite"
 import tsconfigPaths from "vite-tsconfig-paths"
 import react from "@vitejs/plugin-react-swc"
 
-export default defineConfig(async ({ command }) => {
+export default defineConfig(async () => {
 	const config: UserConfig = {
 		plugins: [tsconfigPaths(), react()],
 		server: {

@@ -4,7 +4,7 @@ import { styled } from "styled-system/jsx"
 import React, { useState } from "react"
 
 interface NewTaskProps {
-	onAdd: (title: string) => void // Callback pentru adăugarea unui nou TaskList
+	onAdd: (title: string) => void
 }
 
 const NewTask: React.FC<NewTaskProps> = ({ onAdd }) => {
@@ -17,7 +17,7 @@ const NewTask: React.FC<NewTaskProps> = ({ onAdd }) => {
 	const handleKeyDown = (e: React.KeyboardEvent) => {
 		if (e.key === "Enter" && addList.trim()) {
 			onAdd(addList)
-			setAddList("") // Reset input field
+			setAddList("")
 		}
 	}
 
